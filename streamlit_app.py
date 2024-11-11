@@ -33,12 +33,12 @@ if uploaded_file is not None:
 
 
             # [Optional] Display download link (pre-signed URL)
-          '''  url = s3.meta.client.generate_presigned_url(
+            url = s3.meta.client.generate_presigned_url(
                 ClientMethod='get_object', 
                 Params={'Bucket': bucket_name, 'Key': uploaded_file.name},
                 ExpiresIn=3600  # URL expires in 1 hour
             )
-           st.markdown(f"[Download Link]({url})")'''
+         #  st.markdown(f"[Download Link]({url})")
 
 
 
